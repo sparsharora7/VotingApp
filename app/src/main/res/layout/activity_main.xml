@@ -1,0 +1,64 @@
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:background="@drawable/edit_text_background" />  <!-- Set background to enhance appearance -->
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:background="@drawable/edit_text_background" />  <!-- Set background to enhance appearance -->
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:minHeight="48dp" />   <!-- Set minimum height for Button -->
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:minHeight="48dp" />   <!-- Set minimum height for Button -->
+
+    <!-- Button for TTS -->
+    <Button
+        android:id="@+id/btnToggleTTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable TTS"
+        android:minHeight="48dp" />   <!-- Set minimum height for Button -->
+
+    <!-- How Can I Help You? Button -->
+    <ImageButton
+        android:id="@+id/howCanIHelpYouButton"
+        android:layout_width="48dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+    android:src="@drawable/ic_robot"
+    android:contentDescription="How can I help you"
+        android:layout_height="48dp"/>
+
+</LinearLayout>

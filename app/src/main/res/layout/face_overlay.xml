@@ -1,0 +1,22 @@
+<!-- face_overlay.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- PreviewView for camera preview -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <!-- Circular face alignment guide -->
+    <View
+        android:id="@+id/faceAlignmentOverlay"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/circle_border"
+        android:layout_gravity="center"
+        android:alpha="0.7" /> <!-- Transparency level -->
+
+</FrameLayout>
